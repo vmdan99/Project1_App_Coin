@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="660dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#048AF4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+
+                android:src="@drawable/button_back_foreground" />
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="quét mã QR cá nhân để mua hàng"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@android:drawable/ic_menu_info_details" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="0dp"
+            android:background="#ffffff"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_2"
+        android:layout_width="346dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/QR_code"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/original_qr_code">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/QR_code"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="0dp"
+                    android:text="02:34"
+                    android:textColor="#2C5677"
+                    android:textSize="24sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/hieu_luc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="0dp"
+                    android:text="Giao dịch có hiệu lực trong thời gian"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/linear_home1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hieu_luc"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/round_corner_main">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/icons8_cheap_2_64">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:text="Số dư khả dụng"
+                        android:textColor="#52C7FB"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:gravity="center_vertical"
+                        android:text="300 Coin"
+                        android:textSize="18sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_home2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/linear_home1"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_corner_main2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/credit_card">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:text="Tín chấp đã được cấp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:gravity="center_vertical"
+                            android:text="500 Coin"
+                            android:textSize="18sp"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Đơn vị cung cấp tín chấp của bạn VNPT"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_2"
+
+        >
+
+        <ImageView
+            android:id="@+id/protect"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/image_protect"></ImageView>
+
+        <TextView
+            android:id="@+id/myQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/protect"
+            android:text="Lưu ý bảo mật mã QR của bạn"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/myQR"
+            android:src="@drawable/next_page_foreground">
+
+        </ImageView>
+
+    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="2.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1.0"
+            android:background="#FF3FB2E6">
+
+            <ImageView
+                android:id="@+id/blue_qr_code"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/real_blue_qr_code"></ImageView>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/blue_qr_code"
+                android:text="Mua hàng bằng \nmã QR cá nhân"
+                android:textColor="#ffffff"
+                android:textSize="16dp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1.0"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/blue_qr_code_border"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+               android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/blue_qr_code_border"></ImageView>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/blue_qr_code_border"
+                android:text="Quét mã QR trên\nmáy bán hàng"
+                android:textColor="#FF3FB2E6"
+                android:textSize="16dp"></TextView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

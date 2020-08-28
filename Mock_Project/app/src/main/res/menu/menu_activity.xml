@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_ls_hoat_dong"
+        android:icon="@drawable/lich_su_hoat_dongpng"
+        android:title="Lịch sử\nhoạt động" />
+    <item
+        android:id="@+id/nav_bd_thanh_toan"
+        android:icon="@drawable/payment_history"
+        android:title="Biểu đồ thanh toán" />
+    <item
+        android:id="@+id/nav_ds_tro_chuyen"
+        android:icon="@drawable/edit_chat_history"
+        android:title="Danh sách trò chuỵen" />
+</menu>

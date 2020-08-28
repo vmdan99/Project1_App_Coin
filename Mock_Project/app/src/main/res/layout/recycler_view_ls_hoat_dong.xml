@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp">
+    <ImageView
+        android:id="@+id/imageView"
+       android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/icons8_cheap_2_64">
+
+    </ImageView>
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nạp Coin vào ví"
+            android:textSize="20sp"></TextView>
+        <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hình thức: Thanh toán tại văn phòng"
+            android:layout_below="@id/textView1"></TextView>
+        <TextView
+            android:id="@id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02-07-2020"
+            android:layout_below="@id/textView2"></TextView>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5 Coin"
+        android:layout_toRightOf="@id/relativeLayout1"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textColor="#DA860B">
+
+    </TextView>
+</RelativeLayout>
